@@ -102,7 +102,7 @@ export default function App() {
   return (
     <div className="app">
       <header className="app-header">
-        <h1>H/W Flashcards</h1>
+        <h1>Server Flashcards</h1>
         <p className="tagline">Systems hardware · HPE, CXL, NVIDIA, Intel &amp; AMD</p>
       </header>
 

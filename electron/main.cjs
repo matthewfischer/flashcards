@@ -11,7 +11,7 @@ function createWindow() {
     height: 780,
     minWidth: 480,
     minHeight: 600,
-    title: 'H/W Flashcards',
+    title: 'Server Flashcards',
     backgroundColor: '#0f1419',
     webPreferences: {
       contextIsolation: true,

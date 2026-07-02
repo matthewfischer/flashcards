@@ -1,4 +1,4 @@
-# H/W Flashcards
+# Server Flashcards
 
 A local flashcard app for systems-hardware terminology — HPE servers plus the
 technologies HPE integrates and buys: CXL, NVIDIA (NVLink, Grace/Blackwell,
@@ -21,8 +21,8 @@ npm run app:build
 
 Output lands in `release/`:
 
-- `H-W Flashcards-1.0.0-arm64.dmg` — open it and drag the app to Applications.
-- `release/mac-arm64/H-W Flashcards.app` — the app bundle itself.
+- `Server Flashcards-1.0.0-arm64.dmg` — open it and drag the app to Applications.
+- `release/mac-arm64/Server Flashcards.app` — the app bundle itself.
 
 The app is not code-signed, so on first launch macOS Gatekeeper may warn:
 right-click the app → **Open** once, then it launches normally forever after.

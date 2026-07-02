@@ -1,36 +1,5 @@
 [
   {
-    "id": "hpe-proliant-gen11",
-    "term": "HPE ProLiant Gen11",
-    "definition": "HPE's 11th-generation industry-standard servers, built on 4th/5th Gen Intel Xeon and 4th Gen AMD EPYC. Introduced a modernized design, higher GPU density, and tighter security via Silicon Root of Trust.",
-    "vendor": "HPE",
-    "category": "Servers",
-    "tags": ["proliant", "compute"],
-    "difficulty": "foundational",
-    "links": [
-      {
-        "label": "HPE ProLiant servers",
-        "url": "https://www.hpe.com/us/en/servers/proliant-servers.html"
-      }
-    ]
-  },
-  {
-    "id": "hpe-proliant-gen12",
-    "term": "HPE ProLiant Gen12 (Compute)",
-    "definition": "The next ProLiant generation aimed at AI-era workloads: newest Intel Xeon 6 / AMD EPYC, more accelerators, higher power & cooling (incl. direct liquid cooling), and enhanced security. Positioned around AI inference and data-center modernization.",
-    "vendor": "HPE",
-    "category": "Servers",
-    "tags": ["proliant", "compute", "ai"],
-    "difficulty": "foundational",
-    "roadmap": true,
-    "links": [
-      {
-        "label": "HPE ProLiant servers",
-        "url": "https://www.hpe.com/us/en/servers/proliant-servers.html"
-      }
-    ]
-  },
-  {
     "id": "hpe-proliant-naming",
     "term": "ProLiant DL / ML / XL",
     "definition": "ProLiant form factors: DL = rack-mount (density/general), ML = tower (offices/edge), XL = high-density nodes for chassis like Apollo/Cray. The trailing number/letters denote size and socket count.",
