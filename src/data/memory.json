@@ -1,0 +1,102 @@
+[
+  {
+    "id": "ddr5",
+    "term": "DDR5",
+    "definition": "Current mainstream server DRAM standard — higher bandwidth and density than DDR4, with on-DIMM power management and better RAS. The baseline for Genoa/Turin and 4th/5th Gen Xeon.",
+    "vendor": "JEDEC",
+    "category": "Memory",
+    "tags": ["ddr5", "dram"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "DDR5 SDRAM (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/DDR5_SDRAM"
+      }
+    ]
+  },
+  {
+    "id": "mrdimm",
+    "term": "MRDIMM (Multiplexed Rank DIMM)",
+    "definition": "A DIMM that multiplexes two ranks to roughly double effective data rate over standard DDR5, boosting bandwidth for memory-bound HPC/AI. Supported on platforms like Granite Rapids.",
+    "vendor": "JEDEC",
+    "category": "Memory",
+    "tags": ["mrdimm", "bandwidth"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "DDR5 SDRAM (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/DDR5_SDRAM"
+      }
+    ]
+  },
+  {
+    "id": "hbm",
+    "term": "HBM (High Bandwidth Memory)",
+    "definition": "Stacked DRAM placed on-package next to a GPU/accelerator, connected by a wide interface for enormous bandwidth. The critical, supply-constrained memory for AI accelerators.",
+    "vendor": "JEDEC",
+    "category": "Memory",
+    "tags": ["hbm", "stacked", "ai"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "High Bandwidth Memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/High_Bandwidth_Memory"
+      }
+    ]
+  },
+  {
+    "id": "hbm3e",
+    "term": "HBM3e",
+    "definition": "The enhanced HBM3 generation with higher per-stack bandwidth and capacity, used in H200, Blackwell, and MI325X/MI350. Its availability gates AI-accelerator production.",
+    "vendor": "JEDEC",
+    "category": "Memory",
+    "tags": ["hbm3e", "ai"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "High Bandwidth Memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/High_Bandwidth_Memory"
+      }
+    ]
+  },
+  {
+    "id": "hbm4",
+    "term": "HBM4",
+    "definition": "The next HBM generation with a wider (2048-bit) interface and higher bandwidth/capacity, targeted for next-gen accelerators like NVIDIA Rubin and AMD MI400.",
+    "vendor": "JEDEC",
+    "category": "Memory",
+    "tags": ["hbm4", "roadmap"],
+    "difficulty": "advanced",
+    "roadmap": true,
+    "links": [
+      {
+        "label": "High Bandwidth Memory (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/High_Bandwidth_Memory"
+      }
+    ]
+  },
+  {
+    "id": "lpddr-lpcamm",
+    "term": "LPDDR5X / LPCAMM",
+    "definition": "Low-power DRAM (LPDDR5X) used in tightly integrated CPUs like NVIDIA Grace; LPCAMM is a modular, serviceable LPDDR form factor bringing low-power memory to more systems.",
+    "vendor": "JEDEC",
+    "category": "Memory",
+    "tags": ["lpddr", "low-power"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "LPDDR (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/LPDDR"
+      }
+    ]
+  },
+  {
+    "id": "memory-bandwidth-wall",
+    "term": "Memory wall / bandwidth wall",
+    "definition": "The growing gap between compute throughput and the memory bandwidth/capacity needed to feed it. Drives HBM, MRDIMM, and CXL — for AI, memory is often the real bottleneck.",
+    "vendor": "Industry",
+    "category": "Memory",
+    "tags": ["bottleneck", "bandwidth"],
+    "difficulty": "intermediate"
+  }
+]

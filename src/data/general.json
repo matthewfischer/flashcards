@@ -1,0 +1,138 @@
+[
+  {
+    "id": "training-vs-inference",
+    "term": "Training vs inference",
+    "definition": "Training builds a model (huge, batched, bandwidth-hungry — large GPU clusters). Inference runs it to serve requests (latency-sensitive, memory-capacity bound). The market is shifting spend toward inference at scale.",
+    "vendor": "Industry",
+    "category": "AI Concepts",
+    "tags": ["training", "inference"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "ai-factory",
+    "term": "AI factory",
+    "definition": "NVIDIA-popularized framing of a data center whose 'product' is tokens/intelligence: purpose-built, full-stack facilities that turn power and data into AI output at industrial scale.",
+    "vendor": "Industry",
+    "category": "AI Concepts",
+    "tags": ["ai-factory", "datacenter"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "tokens",
+    "term": "Tokens (as a metric)",
+    "definition": "The unit LLMs process (word-piece chunks). 'Tokens per second' and 'cost per million tokens' are becoming the throughput and economic KPIs for inference infrastructure.",
+    "vendor": "Industry",
+    "category": "AI Concepts",
+    "tags": ["tokens", "inference", "economics"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "sovereign-ai",
+    "term": "Sovereign AI",
+    "definition": "Nations/enterprises building AI infrastructure within their own borders/control for data residency, security, and independence — a major driver of on-prem and regional buildouts.",
+    "vendor": "Industry",
+    "category": "Market",
+    "tags": ["sovereign-ai", "policy"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "neocloud",
+    "term": "Neocloud / GPU cloud",
+    "definition": "Specialist providers (e.g., CoreWeave, Lambda) offering GPU capacity as a service, competing with hyperscalers — a fast-growing buyer segment for AI servers and racks.",
+    "vendor": "Industry",
+    "category": "Market",
+    "tags": ["neocloud", "gpu-cloud"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "disaggregated-infra",
+    "term": "Disaggregated infrastructure",
+    "definition": "Decoupling compute, memory, and storage so each scales independently and is composed on demand (enabled by CXL and fast fabrics) — improving utilization vs fixed servers.",
+    "vendor": "Industry",
+    "category": "Architecture",
+    "tags": ["disaggregation", "composable"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "composable-infra",
+    "term": "Composable infrastructure",
+    "definition": "Software-defined pooling of resources that are assembled into right-sized logical servers via API (e.g., HPE Synergy), then returned to the pool when done.",
+    "vendor": "Industry",
+    "category": "Architecture",
+    "tags": ["composable", "software-defined"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "dpu",
+    "term": "DPU / SmartNIC",
+    "definition": "A programmable network processor (BlueField, Pensando) that offloads networking, storage, and security from the host CPU, freeing cores and enabling zero-trust isolation.",
+    "vendor": "Industry",
+    "category": "Architecture",
+    "tags": ["dpu", "smartnic", "offload"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Data processing unit (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Data_processing_unit"
+      }
+    ]
+  },
+  {
+    "id": "ocp",
+    "term": "OCP (Open Compute Project)",
+    "definition": "An industry community that open-sources data-center hardware designs (racks, power, cooling, NICs). Drives standardization for hyperscale and, increasingly, AI rack designs.",
+    "vendor": "Industry",
+    "category": "Market",
+    "tags": ["ocp", "open-hardware"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "opencompute.org",
+        "url": "https://www.opencompute.org/"
+      },
+      {
+        "label": "Open Compute Project (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Open_Compute_Project"
+      }
+    ]
+  },
+  {
+    "id": "confidential-computing",
+    "term": "Confidential computing",
+    "definition": "Protecting data while in use by running it in hardware-based Trusted Execution Environments (Intel TDX, AMD SEV-SNP), so even the host/hypervisor can't read it.",
+    "vendor": "Industry",
+    "category": "Security",
+    "tags": ["confidential-computing", "tee"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "Confidential computing (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Confidential_computing"
+      }
+    ]
+  },
+  {
+    "id": "tco",
+    "term": "TCO (Total Cost of Ownership)",
+    "definition": "The full cost of infrastructure — acquisition plus power, cooling, space, software, and operations over its life. For AI, power/cooling and utilization increasingly dominate TCO.",
+    "vendor": "Industry",
+    "category": "Economics",
+    "tags": ["tco", "economics"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "Total cost of ownership (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Total_cost_of_ownership"
+      }
+    ]
+  },
+  {
+    "id": "accelerated-computing",
+    "term": "Accelerated computing",
+    "definition": "Offloading heavy parallel work from CPUs to specialized processors (GPUs, DPUs, ASICs). The industry-wide shift underpinning AI and modern HPC economics.",
+    "vendor": "Industry",
+    "category": "Architecture",
+    "tags": ["accelerators", "gpu"],
+    "difficulty": "foundational"
+  }
+]

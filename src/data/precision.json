@@ -1,0 +1,170 @@
+[
+  {
+    "id": "fmt-fp32",
+    "term": "FP32 (single precision)",
+    "definition": "32-bit IEEE float (1 sign / 8 exponent / 23 mantissa), ~7 decimal digits. The accuracy baseline — often kept for 'master weights' and accumulation even when the math runs in lower precision.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "training"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "Single precision (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Single-precision_floating-point_format"
+      }
+    ]
+  },
+  {
+    "id": "fmt-tf32",
+    "term": "TF32 (TensorFloat-32)",
+    "definition": "NVIDIA Tensor Core format that keeps FP32's 8 exponent bits but truncates the mantissa (~10 bits). Gives near-FP32 range with much faster matrix math — a drop-in speedup for FP32 workloads.",
+    "vendor": "NVIDIA",
+    "category": "Numeric Formats",
+    "tags": ["precision", "tensor-core"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "TensorFloat-32 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/TensorFloat-32"
+      }
+    ]
+  },
+  {
+    "id": "fmt-fp16",
+    "term": "FP16 (half precision)",
+    "definition": "16-bit float (1 / 5 / 10). Halves memory and doubles throughput vs FP32, but its small 5-bit exponent range risks overflow/underflow — typically used with 'loss scaling' during training.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "training"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Half precision (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Half-precision_floating-point_format"
+      }
+    ]
+  },
+  {
+    "id": "fmt-bf16",
+    "term": "BF16 (bfloat16)",
+    "definition": "16-bit float (1 / 8 / 7) that keeps FP32's full 8-bit exponent range but fewer mantissa bits. Same dynamic range as FP32 makes it far easier to train with than FP16 — now the default for much AI training.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "training"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "bfloat16 (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Bfloat16_floating-point_format"
+      }
+    ]
+  },
+  {
+    "id": "fmt-fp8",
+    "term": "FP8",
+    "definition": "8-bit float in two variants — E4M3 (more precision) and E5M2 (more range). Popularized by NVIDIA's Hopper Transformer Engine; roughly doubles throughput and halves memory vs FP16 for training and inference.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "fp8", "transformer-engine"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Minifloat (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Minifloat"
+      }
+    ]
+  },
+  {
+    "id": "fmt-fp6",
+    "term": "FP6",
+    "definition": "6-bit float, an intermediate step between FP8 and FP4. Supported on Blackwell and AMD CDNA 4, it trades a little accuracy for more inference throughput and smaller memory footprint.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "inference"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Minifloat (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Minifloat"
+      }
+    ]
+  },
+  {
+    "id": "fmt-fp4",
+    "term": "FP4",
+    "definition": "4-bit float (e.g., E2M1) — the lowest-precision format in current AI hardware. Blackwell and AMD MI350 use it to maximize inference tokens/sec; needs careful per-block scaling (MX formats) to hold accuracy.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "fp4", "inference"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "Minifloat (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Minifloat"
+      }
+    ]
+  },
+  {
+    "id": "fmt-int8",
+    "term": "INT8",
+    "definition": "8-bit integer format widely used for inference quantization. Very efficient, but requires calibration (mapping float ranges to integers) to avoid accuracy loss; common in edge and cost-sensitive serving.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "quantization", "inference"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Quantization (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Quantization_(signal_processing)"
+      }
+    ]
+  },
+  {
+    "id": "fmt-mixed-precision",
+    "term": "Mixed precision",
+    "definition": "Running most math in a low-precision format (FP16/BF16/FP8) for speed while keeping select values — master weights and accumulations — in higher precision to preserve accuracy. Standard practice in modern training.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "training"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Half precision (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Half-precision_floating-point_format"
+      }
+    ]
+  },
+  {
+    "id": "fmt-quantization",
+    "term": "Quantization",
+    "definition": "Reducing the numeric precision of model weights/activations (e.g., to FP8, INT8, or FP4) to cut memory and boost speed. The goal is maximum compression with minimal accuracy loss — central to cheap inference.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "quantization", "inference"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Quantization (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Quantization_(signal_processing)"
+      }
+    ]
+  },
+  {
+    "id": "fmt-mx-formats",
+    "term": "MX (microscaling) formats",
+    "definition": "An OCP standard (MXFP8/MXFP6/MXFP4) where a block of low-precision values shares a common scaling factor. This shared scale is what makes FP4/FP6 usable at scale; adopted across NVIDIA and AMD.",
+    "vendor": "Industry",
+    "category": "Numeric Formats",
+    "tags": ["precision", "ocp", "fp4"],
+    "difficulty": "advanced"
+  },
+  {
+    "id": "fmt-transformer-engine",
+    "term": "Transformer Engine",
+    "definition": "NVIDIA tech (Hopper onward) that dynamically chooses per-layer precision — e.g., FP8 vs FP16 — and manages scaling automatically, so models get low-precision speed without manual tuning.",
+    "vendor": "NVIDIA",
+    "category": "Numeric Formats",
+    "tags": ["precision", "transformer-engine", "fp8"],
+    "difficulty": "advanced"
+  }
+]

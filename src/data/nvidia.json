@@ -1,0 +1,342 @@
+[
+  {
+    "id": "nvidia-hopper-h100",
+    "term": "NVIDIA H100 (Hopper)",
+    "definition": "Data-center GPU on the Hopper architecture with the Transformer Engine (FP8) for LLM training/inference. Uses HBM3, NVLink, and became the workhorse of the generative-AI boom.",
+    "vendor": "NVIDIA",
+    "category": "GPU",
+    "tags": ["hopper", "training", "hbm3"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "NVIDIA H100 product page",
+        "url": "https://www.nvidia.com/en-us/data-center/h100/"
+      },
+      {
+        "label": "Hopper architecture",
+        "url": "https://www.nvidia.com/en-us/data-center/technologies/hopper-architecture/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-h200",
+    "term": "NVIDIA H200",
+    "definition": "Hopper-generation GPU upgraded with 141 GB of faster HBM3e memory (vs H100's 80 GB), boosting inference throughput and larger-model capacity without changing the core architecture.",
+    "vendor": "NVIDIA",
+    "category": "GPU",
+    "tags": ["hopper", "hbm3e", "inference"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "NVIDIA H200",
+        "url": "https://www.nvidia.com/en-us/data-center/h200/"
+      },
+      {
+        "label": "Hopper architecture (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Hopper_(microarchitecture)"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-grace",
+    "term": "NVIDIA Grace CPU",
+    "definition": "NVIDIA's Arm-based, 72-core data-center CPU with LPDDR5X memory, designed to pair tightly with GPUs over NVLink-C2C for AI and HPC — NVIDIA's first datacenter CPU.",
+    "vendor": "NVIDIA",
+    "category": "CPU",
+    "tags": ["arm", "grace", "cpu"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "NVIDIA Grace CPU",
+        "url": "https://www.nvidia.com/en-us/data-center/grace-cpu/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-gh200",
+    "term": "NVIDIA GH200 (Grace Hopper)",
+    "definition": "A 'superchip' combining a Grace CPU and Hopper GPU on one module via NVLink-C2C, giving the GPU coherent, high-bandwidth access to large CPU memory for big-model workloads.",
+    "vendor": "NVIDIA",
+    "category": "GPU",
+    "tags": ["superchip", "grace", "hopper"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "NVIDIA Grace Hopper",
+        "url": "https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-blackwell-b200",
+    "term": "NVIDIA Blackwell (B200 / B100)",
+    "definition": "The architecture after Hopper: a dual-die GPU with second-gen Transformer Engine (FP4/FP6), HBM3e, and 5th-gen NVLink — a major step-up for trillion-parameter model training and inference.",
+    "vendor": "NVIDIA",
+    "category": "GPU",
+    "tags": ["blackwell", "fp4", "hbm3e"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "NVIDIA Blackwell architecture",
+        "url": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/"
+      },
+      {
+        "label": "Blackwell architecture (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Blackwell_(microarchitecture)"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-gb200",
+    "term": "NVIDIA GB200 (Grace Blackwell)",
+    "definition": "Superchip pairing one Grace CPU with two Blackwell GPUs. The building block of the GB200 NVL72 rack-scale system.",
+    "vendor": "NVIDIA",
+    "category": "GPU",
+    "tags": ["superchip", "grace", "blackwell"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "NVIDIA Blackwell architecture",
+        "url": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-gb200-nvl72",
+    "term": "GB200 NVL72",
+    "definition": "A liquid-cooled rack that links 72 Blackwell GPUs and 36 Grace CPUs over a single NVLink domain so they act as one giant GPU — NVIDIA's rack-scale unit for frontier AI.",
+    "vendor": "NVIDIA",
+    "category": "Rack-scale",
+    "tags": ["nvl72", "rack-scale", "nvlink"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "NVIDIA GB200 NVL72",
+        "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-blackwell-ultra-gb300",
+    "term": "Blackwell Ultra (GB300)",
+    "definition": "Mid-cycle Blackwell refresh with more HBM3e memory and higher inference performance, targeting large-scale reasoning/inference deployments; basis of the GB300 NVL72.",
+    "vendor": "NVIDIA",
+    "category": "GPU",
+    "tags": ["blackwell", "gb300", "inference"],
+    "difficulty": "intermediate",
+    "roadmap": true,
+    "links": [
+      {
+        "label": "NVIDIA Blackwell architecture",
+        "url": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-vera",
+    "term": "NVIDIA Vera CPU",
+    "definition": "NVIDIA's next custom Arm-based CPU (successor to Grace), built on custom 'Olympus' cores, designed to pair with the Rubin GPU in the Vera Rubin platform.",
+    "vendor": "NVIDIA",
+    "category": "CPU",
+    "tags": ["vera", "arm", "roadmap"],
+    "difficulty": "intermediate",
+    "roadmap": true
+  },
+  {
+    "id": "nvidia-rubin",
+    "term": "NVIDIA Rubin GPU",
+    "definition": "The GPU architecture after Blackwell (named for astronomer Vera Rubin). Expected to use HBM4 and next-gen NVLink; pairs with the Vera CPU in Vera Rubin systems.",
+    "vendor": "NVIDIA",
+    "category": "GPU",
+    "tags": ["rubin", "hbm4", "roadmap"],
+    "difficulty": "intermediate",
+    "roadmap": true
+  },
+  {
+    "id": "nvidia-vera-rubin",
+    "term": "Vera Rubin (VR200 NVL144)",
+    "definition": "NVIDIA's next rack-scale platform combining Vera CPUs with Rubin GPUs, following the Grace-Blackwell generation on NVIDIA's roughly annual cadence.",
+    "vendor": "NVIDIA",
+    "category": "Rack-scale",
+    "tags": ["vera", "rubin", "rack-scale", "roadmap"],
+    "difficulty": "advanced",
+    "roadmap": true
+  },
+  {
+    "id": "nvidia-nvlink",
+    "term": "NVLink",
+    "definition": "NVIDIA's high-bandwidth, low-latency GPU-to-GPU (and GPU-to-CPU) interconnect, far faster than PCIe. Lets multiple GPUs share memory and scale as a tightly coupled unit.",
+    "vendor": "NVIDIA",
+    "category": "Interconnect",
+    "tags": ["nvlink", "gpu", "interconnect"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "NVIDIA NVLink",
+        "url": "https://www.nvidia.com/en-us/data-center/nvlink/"
+      },
+      {
+        "label": "NVLink (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/NVLink"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-nvswitch",
+    "term": "NVSwitch",
+    "definition": "The switch chip that connects many GPUs over NVLink into a full all-to-all fabric, enabling large NVLink domains like the NVL72 to behave as one accelerator.",
+    "vendor": "NVIDIA",
+    "category": "Interconnect",
+    "tags": ["nvswitch", "nvlink", "fabric"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "NVIDIA NVLink",
+        "url": "https://www.nvidia.com/en-us/data-center/nvlink/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-nvlink-fusion",
+    "term": "NVLink Fusion",
+    "definition": "NVIDIA initiative that opens NVLink to third-party CPUs and custom accelerators (ASICs), letting partners connect their silicon into NVLink-based rack systems.",
+    "vendor": "NVIDIA",
+    "category": "Interconnect",
+    "tags": ["nvlink", "ecosystem", "custom-silicon"],
+    "difficulty": "advanced",
+    "roadmap": true,
+    "links": [
+      {
+        "label": "NVIDIA NVLink",
+        "url": "https://www.nvidia.com/en-us/data-center/nvlink/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-hgx",
+    "term": "NVIDIA HGX",
+    "definition": "NVIDIA's baseboard reference design carrying 4-8 GPUs interconnected by NVSwitch. OEMs like HPE build servers around HGX boards for AI training.",
+    "vendor": "NVIDIA",
+    "category": "Platform",
+    "tags": ["hgx", "baseboard", "oem"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "nvidia-mgx",
+    "term": "NVIDIA MGX",
+    "definition": "A modular server reference architecture that standardizes chassis/mechanicals so OEMs can build many CPU+GPU+DPU configurations quickly across generations.",
+    "vendor": "NVIDIA",
+    "category": "Platform",
+    "tags": ["mgx", "modular", "reference-design"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "nvidia-dgx",
+    "term": "NVIDIA DGX",
+    "definition": "NVIDIA's own fully integrated AI supercomputer/appliance (hardware + software stack), used as the reference for enterprise AI and the basis of DGX Cloud.",
+    "vendor": "NVIDIA",
+    "category": "Platform",
+    "tags": ["dgx", "appliance", "supercomputer"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "NVIDIA DGX platform",
+        "url": "https://www.nvidia.com/en-us/data-center/dgx-platform/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-bluefield-dpu",
+    "term": "NVIDIA BlueField DPU",
+    "definition": "A data processing unit (SmartNIC + Arm cores) that offloads networking, storage, and security from the host CPU — key to zero-trust and 'infrastructure on the NIC.'",
+    "vendor": "NVIDIA",
+    "category": "Networking",
+    "tags": ["dpu", "smartnic", "offload"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "NVIDIA BlueField DPU",
+        "url": "https://www.nvidia.com/en-us/networking/products/data-processing-unit/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-spectrum-x",
+    "term": "NVIDIA Spectrum-X",
+    "definition": "NVIDIA's Ethernet networking platform (Spectrum switches + BlueField/ConnectX) tuned for AI clusters, adding congestion control and performance isolation to standard Ethernet.",
+    "vendor": "NVIDIA",
+    "category": "Networking",
+    "tags": ["ethernet", "ai-fabric"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "NVIDIA Spectrum-X",
+        "url": "https://www.nvidia.com/en-us/networking/spectrumx/"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-quantum-infiniband",
+    "term": "NVIDIA Quantum InfiniBand",
+    "definition": "NVIDIA's InfiniBand switch platform (from Mellanox) offering ultra-low latency and in-network computing (SHARP) for the largest AI/HPC clusters.",
+    "vendor": "NVIDIA",
+    "category": "Networking",
+    "tags": ["infiniband", "hpc", "low-latency"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "InfiniBand (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/InfiniBand"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-cuda",
+    "term": "CUDA",
+    "definition": "NVIDIA's parallel-computing platform and programming model. Its mature software ecosystem and libraries are the primary 'moat' locking developers to NVIDIA GPUs.",
+    "vendor": "NVIDIA",
+    "category": "Software",
+    "tags": ["cuda", "software", "ecosystem"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "CUDA developer zone",
+        "url": "https://developer.nvidia.com/cuda-zone"
+      },
+      {
+        "label": "CUDA (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/CUDA"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-nim",
+    "term": "NVIDIA NIM",
+    "definition": "NVIDIA Inference Microservices — containerized, optimized model endpoints (part of NVIDIA AI Enterprise) that let enterprises deploy AI models with a standard API.",
+    "vendor": "NVIDIA",
+    "category": "Software",
+    "tags": ["nim", "inference", "microservices"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "NVIDIA NIM",
+        "url": "https://developer.nvidia.com/nim"
+      }
+    ]
+  },
+  {
+    "id": "nvidia-ai-enterprise",
+    "term": "NVIDIA AI Enterprise",
+    "definition": "NVIDIA's supported enterprise AI software suite (frameworks, NIM, tools) sold as a per-GPU subscription and bundled into partner solutions like HPE Private Cloud AI.",
+    "vendor": "NVIDIA",
+    "category": "Software",
+    "tags": ["software", "subscription", "enterprise"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "NVIDIA AI Enterprise",
+        "url": "https://www.nvidia.com/en-us/data-center/products/ai-enterprise/"
+      }
+    ]
+  }
+]

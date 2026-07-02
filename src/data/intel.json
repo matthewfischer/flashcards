@@ -1,0 +1,186 @@
+[
+  {
+    "id": "intel-xeon-6",
+    "term": "Intel Xeon 6",
+    "definition": "Intel's rebranded server CPU line that splits into two families: P-core (performance) and E-core (efficiency/density), letting customers pick per workload while sharing a platform.",
+    "vendor": "Intel",
+    "category": "CPU",
+    "tags": ["xeon", "server"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "Xeon (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Xeon"
+      }
+    ]
+  },
+  {
+    "id": "intel-pcore-ecore",
+    "term": "P-core vs E-core (Xeon)",
+    "definition": "P-cores maximize per-core performance for latency-sensitive / licensed workloads; E-cores maximize core count and efficiency for scale-out and cloud-native density. Intel ships them as separate Xeon 6 lines.",
+    "vendor": "Intel",
+    "category": "CPU",
+    "tags": ["architecture", "cores"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Xeon (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Xeon"
+      }
+    ]
+  },
+  {
+    "id": "intel-sapphire-rapids",
+    "term": "Sapphire Rapids (4th Gen Xeon)",
+    "definition": "Intel's 4th Gen Xeon Scalable — first with built-in accelerators (AMX for AI, DSA, QAT), DDR5, PCIe 5.0, and CXL 1.1 support. Also offered a rare HBM variant (Xeon Max).",
+    "vendor": "Intel",
+    "category": "CPU",
+    "tags": ["xeon", "amx", "cxl"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Sapphire Rapids (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sapphire_Rapids"
+      }
+    ]
+  },
+  {
+    "id": "intel-emerald-rapids",
+    "term": "Emerald Rapids (5th Gen Xeon)",
+    "definition": "Refinement of Sapphire Rapids: more cores, larger cache, higher efficiency on the same platform — an incremental performance-per-watt uplift.",
+    "vendor": "Intel",
+    "category": "CPU",
+    "tags": ["xeon", "refresh"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "Sapphire Rapids (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Sapphire_Rapids"
+      }
+    ]
+  },
+  {
+    "id": "intel-granite-rapids",
+    "term": "Granite Rapids (Xeon 6 P-core)",
+    "definition": "Intel's high-performance Xeon 6 P-core CPU on Intel 3 process, with high core counts and support for faster memory including MRDIMM — aimed at demanding compute and AI head-node roles.",
+    "vendor": "Intel",
+    "category": "CPU",
+    "tags": ["xeon-6", "p-core", "mrdimm"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Granite Rapids (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Granite_Rapids"
+      }
+    ]
+  },
+  {
+    "id": "intel-sierra-forest",
+    "term": "Sierra Forest (Xeon 6 E-core)",
+    "definition": "Intel's efficiency-core Xeon 6 with very high core counts (up to 288) for cloud-native, scale-out, high-density workloads where throughput-per-watt and rack consolidation matter.",
+    "vendor": "Intel",
+    "category": "CPU",
+    "tags": ["xeon-6", "e-core", "density"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Granite Rapids (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Granite_Rapids"
+      }
+    ]
+  },
+  {
+    "id": "intel-clearwater-forest",
+    "term": "Clearwater Forest",
+    "definition": "Intel's next E-core Xeon, notable as an early high-volume server product on the Intel 18A process with backside power (PowerVia) and RibbonFET — a key manufacturing milestone.",
+    "vendor": "Intel",
+    "category": "CPU",
+    "tags": ["e-core", "18a", "roadmap"],
+    "difficulty": "advanced",
+    "roadmap": true,
+    "links": [
+      {
+        "label": "Granite Rapids (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Granite_Rapids"
+      }
+    ]
+  },
+  {
+    "id": "intel-diamond-rapids",
+    "term": "Diamond Rapids",
+    "definition": "Intel's next-generation P-core Xeon following Granite Rapids, expected to push higher core counts, new instructions (APX/AVX10), and a new platform.",
+    "vendor": "Intel",
+    "category": "CPU",
+    "tags": ["p-core", "roadmap"],
+    "difficulty": "advanced",
+    "roadmap": true,
+    "links": [
+      {
+        "label": "Granite Rapids (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Granite_Rapids"
+      }
+    ]
+  },
+  {
+    "id": "intel-amx",
+    "term": "Intel AMX",
+    "definition": "Advanced Matrix Extensions — CPU instructions (tile-based matrix ops) that accelerate AI inference directly on Xeon, letting CPUs handle modest AI without a GPU.",
+    "vendor": "Intel",
+    "category": "Accelerators",
+    "tags": ["amx", "ai", "instructions"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Advanced Matrix Extensions (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Advanced_Matrix_Extensions"
+      }
+    ]
+  },
+  {
+    "id": "intel-gaudi",
+    "term": "Intel Gaudi 3",
+    "definition": "Intel's dedicated AI training/inference accelerator (from Habana Labs), positioned as a lower-cost alternative to NVIDIA GPUs, using standard Ethernet for scale-out.",
+    "vendor": "Intel",
+    "category": "Accelerators",
+    "tags": ["gaudi", "ai-accelerator"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Intel Gaudi",
+        "url": "https://www.intel.com/content/www/us/en/products/details/processors/ai-accelerators/gaudi.html"
+      },
+      {
+        "label": "Habana Labs (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Habana_Labs"
+      }
+    ]
+  },
+  {
+    "id": "intel-18a",
+    "term": "Intel 18A",
+    "definition": "Intel's leading-edge (1.8nm-class) process node featuring RibbonFET (gate-all-around) transistors and PowerVia backside power delivery — central to Intel's foundry comeback.",
+    "vendor": "Intel",
+    "category": "Process",
+    "tags": ["process", "foundry", "18a"],
+    "difficulty": "advanced"
+  },
+  {
+    "id": "intel-optane",
+    "term": "Intel Optane (persistent memory)",
+    "definition": "Intel's 3D XPoint persistent memory that sat between DRAM and SSD in speed. Now discontinued — often cited as the market gap that CXL memory tiering aims to fill.",
+    "vendor": "Intel",
+    "category": "Memory",
+    "tags": ["optane", "persistent-memory", "legacy"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Optane (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Optane"
+      },
+      {
+        "label": "3D XPoint (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/3D_XPoint"
+      }
+    ]
+  }
+]

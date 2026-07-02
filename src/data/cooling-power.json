@@ -1,0 +1,116 @@
+[
+  {
+    "id": "dlc",
+    "term": "Direct Liquid Cooling (DLC)",
+    "definition": "Cooling that pipes liquid to cold plates on hot components (CPU/GPU) instead of relying on air. Increasingly mandatory as accelerator TDPs exceed what air can handle. HPE ships fanless 100% DLC for top systems.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["liquid-cooling", "dlc"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Liquid cooling (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Liquid_cooling"
+      }
+    ]
+  },
+  {
+    "id": "immersion-cooling",
+    "term": "Immersion cooling",
+    "definition": "Submerging servers in a dielectric fluid (single- or two-phase) to remove heat. Enables extreme density but requires new mechanical/facility design.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["immersion", "density"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Immersion cooling (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Immersion_cooling"
+      }
+    ]
+  },
+  {
+    "id": "cdu",
+    "term": "CDU (Coolant Distribution Unit)",
+    "definition": "The unit that circulates and controls coolant between the facility water loop and the server/rack liquid-cooling loop — the heart of a DLC deployment.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["liquid-cooling", "facility"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Liquid cooling (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Liquid_cooling"
+      }
+    ]
+  },
+  {
+    "id": "rear-door-hx",
+    "term": "Rear-door heat exchanger",
+    "definition": "A liquid-cooled radiator mounted on the rack's back door that cools exhaust air, letting existing air-cooled racks handle higher density without full DLC.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["cooling", "retrofit"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "Liquid cooling (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Liquid_cooling"
+      }
+    ]
+  },
+  {
+    "id": "rack-power-density",
+    "term": "Rack power density (kW/rack)",
+    "definition": "Power drawn per rack. Traditional racks were 5-15 kW; AI racks (e.g., NVL72) now hit 100-140+ kW, forcing liquid cooling and data-center power/thermal redesign.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["power", "density"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "tdp",
+    "term": "TDP (Thermal Design Power)",
+    "definition": "The heat (in watts) a cooling solution must dissipate for a chip at sustained load. Server CPU/GPU TDPs have climbed past 500W-1kW+, driving the shift to liquid cooling.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["tdp", "thermal"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "Thermal design power (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Thermal_design_power"
+      }
+    ]
+  },
+  {
+    "id": "pue",
+    "term": "PUE (Power Usage Effectiveness)",
+    "definition": "Ratio of total facility power to IT-equipment power. 1.0 is ideal; lower is more efficient. Liquid cooling and better design push PUE down, cutting energy cost and carbon.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["pue", "efficiency", "sustainability"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Power usage effectiveness (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Power_usage_effectiveness"
+      }
+    ]
+  },
+  {
+    "id": "48v-power",
+    "term": "48V power delivery",
+    "definition": "Higher-voltage (48V vs 12V) rack/board power distribution that reduces current and resistive losses — increasingly standard (via OCP) for high-power AI racks.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["power", "efficiency", "ocp"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "Open Compute Project (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Open_Compute_Project"
+      }
+    ]
+  }
+]

@@ -1,0 +1,207 @@
+[
+  {
+    "id": "hpe-proliant-gen11",
+    "term": "HPE ProLiant Gen11",
+    "definition": "HPE's 11th-generation industry-standard servers, built on 4th/5th Gen Intel Xeon and 4th Gen AMD EPYC. Introduced a modernized design, higher GPU density, and tighter security via Silicon Root of Trust.",
+    "vendor": "HPE",
+    "category": "Servers",
+    "tags": ["proliant", "compute"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "HPE ProLiant servers",
+        "url": "https://www.hpe.com/us/en/servers/proliant-servers.html"
+      }
+    ]
+  },
+  {
+    "id": "hpe-proliant-gen12",
+    "term": "HPE ProLiant Gen12 (Compute)",
+    "definition": "The next ProLiant generation aimed at AI-era workloads: newest Intel Xeon 6 / AMD EPYC, more accelerators, higher power & cooling (incl. direct liquid cooling), and enhanced security. Positioned around AI inference and data-center modernization.",
+    "vendor": "HPE",
+    "category": "Servers",
+    "tags": ["proliant", "compute", "ai"],
+    "difficulty": "foundational",
+    "roadmap": true,
+    "links": [
+      {
+        "label": "HPE ProLiant servers",
+        "url": "https://www.hpe.com/us/en/servers/proliant-servers.html"
+      }
+    ]
+  },
+  {
+    "id": "hpe-proliant-naming",
+    "term": "ProLiant DL / ML / XL",
+    "definition": "ProLiant form factors: DL = rack-mount (density/general), ML = tower (offices/edge), XL = high-density nodes for chassis like Apollo/Cray. The trailing number/letters denote size and socket count.",
+    "vendor": "HPE",
+    "category": "Servers",
+    "tags": ["proliant", "form-factor"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "HPE ProLiant servers",
+        "url": "https://www.hpe.com/us/en/servers/proliant-servers.html"
+      }
+    ]
+  },
+  {
+    "id": "hpe-ilo",
+    "term": "iLO (Integrated Lights-Out)",
+    "definition": "HPE's embedded server management processor (BMC). Provides remote console, power control, health monitoring, firmware management and secure recovery independent of the host OS.",
+    "vendor": "HPE",
+    "category": "Management",
+    "tags": ["bmc", "management", "firmware"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "Integrated Lights-Out (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Integrated_Lights-Out"
+      }
+    ]
+  },
+  {
+    "id": "hpe-silicon-root-of-trust",
+    "term": "Silicon Root of Trust",
+    "definition": "HPE security feature that anchors firmware integrity in the iLO silicon. Cryptographically verifies firmware from boot, detects tampering, and enables automated recovery to a known-good state.",
+    "vendor": "HPE",
+    "category": "Security",
+    "tags": ["security", "firmware", "ilo"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-greenlake",
+    "term": "HPE GreenLake",
+    "definition": "HPE's edge-to-cloud platform delivering on-prem infrastructure as a consumption-based (pay-per-use) service, with cloud-style provisioning, metering, and a unified management console.",
+    "vendor": "HPE",
+    "category": "Platform",
+    "tags": ["as-a-service", "cloud", "consumption"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "HPE GreenLake",
+        "url": "https://www.hpe.com/us/en/greenlake.html"
+      }
+    ]
+  },
+  {
+    "id": "hpe-com",
+    "term": "HPE Compute Ops Management (COM)",
+    "definition": "Cloud-based, GreenLake-delivered service for managing ProLiant servers at scale: firmware/driver updates, monitoring, and automation from a single SaaS console — successor direction to on-prem OneView for compute.",
+    "vendor": "HPE",
+    "category": "Management",
+    "tags": ["management", "saas", "greenlake"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-oneview",
+    "term": "HPE OneView",
+    "definition": "On-premises infrastructure management platform that uses software-defined templates and a unified API to automate provisioning, firmware, and lifecycle across HPE servers, storage, and networking.",
+    "vendor": "HPE",
+    "category": "Management",
+    "tags": ["management", "automation", "api"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-synergy",
+    "term": "HPE Synergy",
+    "definition": "Composable infrastructure platform: pools of compute, storage, and fabric that software can compose on demand into right-sized resources via a single API — blurring the line between blade and rack.",
+    "vendor": "HPE",
+    "category": "Servers",
+    "tags": ["composable", "blade"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-superdome-flex",
+    "term": "HPE Superdome Flex / Compute Scale-up",
+    "definition": "Scale-up x86 servers supporting very large shared-memory footprints (many sockets, tens of TB RAM) for in-memory databases (e.g., SAP HANA) and mission-critical workloads needing a single large system image.",
+    "vendor": "HPE",
+    "category": "Servers",
+    "tags": ["scale-up", "mission-critical", "sap-hana"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-cray-ex",
+    "term": "HPE Cray EX (Supercomputing)",
+    "definition": "HPE's flagship exascale supercomputer platform (from the Cray acquisition). Liquid-cooled, blade-based, using Slingshot interconnect; powers systems like Frontier and El Capitan.",
+    "vendor": "HPE",
+    "category": "HPC",
+    "tags": ["hpc", "supercomputer", "exascale", "cray"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "HPE Cray supercomputing",
+        "url": "https://www.hpe.com/us/en/cray-exascale-supercomputing.html"
+      }
+    ]
+  },
+  {
+    "id": "hpe-cray-xd",
+    "term": "HPE Cray XD",
+    "definition": "Dense, accelerator-optimized HPC/AI servers (from Cray) for GPU-heavy training clusters — high node density with support for NVIDIA HGX and similar accelerator trays.",
+    "vendor": "HPE",
+    "category": "HPC",
+    "tags": ["hpc", "ai", "gpu", "cray"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "HPE Cray supercomputing",
+        "url": "https://www.hpe.com/us/en/cray-exascale-supercomputing.html"
+      }
+    ]
+  },
+  {
+    "id": "hpe-slingshot",
+    "term": "HPE Slingshot",
+    "definition": "HPE Cray's high-performance Ethernet-based HPC interconnect with advanced congestion control and adaptive routing; the fabric behind top exascale systems, positioned against InfiniBand.",
+    "vendor": "HPE",
+    "category": "Interconnect",
+    "tags": ["hpc", "fabric", "ethernet", "cray"],
+    "difficulty": "advanced"
+  },
+  {
+    "id": "hpe-private-cloud-ai",
+    "term": "HPE Private Cloud AI",
+    "definition": "Turnkey, co-engineered HPE + NVIDIA solution (part of 'NVIDIA AI Computing by HPE') bundling GreenLake, ProLiant/accelerated compute, storage, and the NVIDIA AI stack for fast on-prem AI deployment.",
+    "vendor": "HPE",
+    "category": "Platform",
+    "tags": ["ai", "nvidia", "greenlake", "turnkey"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-alletra-mp",
+    "term": "HPE Alletra Storage MP",
+    "definition": "HPE's disaggregated, all-flash storage platform with independently scalable compute and capacity, delivered as block or file and managed through the cloud (GreenLake / Data Services).",
+    "vendor": "HPE",
+    "category": "Storage",
+    "tags": ["storage", "all-flash", "disaggregated"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-edgeline",
+    "term": "HPE Edgeline",
+    "definition": "Ruggedized, compact servers built to run compute and analytics at the edge — factories, telco, remote sites — where full data-center environments aren't available.",
+    "vendor": "HPE",
+    "category": "Servers",
+    "tags": ["edge", "rugged"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "hpe-morpheus-vm-essentials",
+    "term": "HPE Morpheus / VM Essentials",
+    "definition": "HPE's virtualization and hybrid-cloud management software (from the Morpheus Data acquisition), including a KVM-based hypervisor option positioned as a lower-cost alternative amid VMware licensing changes.",
+    "vendor": "HPE",
+    "category": "Platform",
+    "tags": ["virtualization", "kvm", "hybrid-cloud"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-nonstop",
+    "term": "HPE NonStop",
+    "definition": "Fault-tolerant systems for continuous-availability transaction processing (banking, payments, telco). Redundant, shared-nothing architecture designed to never lose a transaction.",
+    "vendor": "HPE",
+    "category": "Servers",
+    "tags": ["fault-tolerant", "mission-critical"],
+    "difficulty": "advanced"
+  }
+]

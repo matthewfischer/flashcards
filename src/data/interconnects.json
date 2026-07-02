@@ -1,0 +1,157 @@
+[
+  {
+    "id": "pcie-5",
+    "term": "PCIe 5.0",
+    "definition": "32 GT/s per lane (~64 GB/s x16 bidirectional). The mainstream data-center IO standard for current-gen CPUs, GPUs, NICs, and NVMe; also the physical layer for CXL 1.1/2.0.",
+    "vendor": "PCI-SIG",
+    "category": "Interconnect",
+    "tags": ["pcie", "io"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "PCI Express (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/PCI_Express"
+      },
+      {
+        "label": "PCI-SIG",
+        "url": "https://pcisig.com/"
+      }
+    ]
+  },
+  {
+    "id": "pcie-6",
+    "term": "PCIe 6.0",
+    "definition": "Doubles PCIe 5.0 to 64 GT/s using PAM4 signaling and FEC. Enables faster GPUs/NICs and is the basis for CXL 3.x — critical for AI networking bandwidth.",
+    "vendor": "PCI-SIG",
+    "category": "Interconnect",
+    "tags": ["pcie", "pam4"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "PCI Express (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/PCI_Express"
+      },
+      {
+        "label": "PCI-SIG",
+        "url": "https://pcisig.com/"
+      }
+    ]
+  },
+  {
+    "id": "pcie-7",
+    "term": "PCIe 7.0",
+    "definition": "The next PCIe generation targeting 128 GT/s per lane, aimed at future AI, 800G+ networking, and CXL — spec finalized ahead of broad product availability.",
+    "vendor": "PCI-SIG",
+    "category": "Interconnect",
+    "tags": ["pcie", "roadmap"],
+    "difficulty": "intermediate",
+    "roadmap": true,
+    "links": [
+      {
+        "label": "PCI Express (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/PCI_Express"
+      },
+      {
+        "label": "PCI-SIG",
+        "url": "https://pcisig.com/"
+      }
+    ]
+  },
+  {
+    "id": "ualink",
+    "term": "UALink (Ultra Accelerator Link)",
+    "definition": "An open industry standard for scale-up accelerator-to-accelerator interconnect (AMD, Broadcom, HPE, Intel, etc.) — the consortium's open alternative to NVIDIA's proprietary NVLink.",
+    "vendor": "Industry",
+    "category": "Interconnect",
+    "tags": ["ualink", "open-standard", "scale-up"],
+    "difficulty": "advanced",
+    "roadmap": true,
+    "links": [
+      {
+        "label": "UALink Consortium",
+        "url": "https://ualinkconsortium.org/"
+      },
+      {
+        "label": "UALink (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/UALink"
+      }
+    ]
+  },
+  {
+    "id": "ultra-ethernet",
+    "term": "Ultra Ethernet (UEC)",
+    "definition": "The Ultra Ethernet Consortium's effort to modernize Ethernet for AI/HPC scale-out — better congestion control, multipathing, and low latency — as an open alternative to InfiniBand.",
+    "vendor": "Industry",
+    "category": "Interconnect",
+    "tags": ["ethernet", "open-standard", "scale-out"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "Ultra Ethernet Consortium",
+        "url": "https://ultraethernet.org/"
+      }
+    ]
+  },
+  {
+    "id": "scale-up-vs-scale-out",
+    "term": "Scale-up vs scale-out",
+    "definition": "Scale-up = tightly couple accelerators within a node/rack over a fast fabric (NVLink, UALink) so they act as one big GPU. Scale-out = connect many nodes over a network (Ethernet/InfiniBand). AI needs both tiers.",
+    "vendor": "Industry",
+    "category": "Interconnect",
+    "tags": ["scale-up", "scale-out", "topology"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "infiniband",
+    "term": "InfiniBand",
+    "definition": "A low-latency, high-throughput HPC/AI network with RDMA and in-network compute. Dominant in large GPU training clusters; NVIDIA's Quantum line is the leading implementation.",
+    "vendor": "Industry",
+    "category": "Interconnect",
+    "tags": ["infiniband", "rdma", "hpc"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "InfiniBand (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/InfiniBand"
+      }
+    ]
+  },
+  {
+    "id": "ucie",
+    "term": "UCIe (Universal Chiplet Interconnect Express)",
+    "definition": "An open standard for die-to-die interconnect, enabling chiplets from different vendors to be packaged together — foundational to the industry's move to disaggregated silicon.",
+    "vendor": "Industry",
+    "category": "Interconnect",
+    "tags": ["ucie", "chiplet", "packaging"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "UCIe",
+        "url": "https://www.uciexpress.org/"
+      },
+      {
+        "label": "Chiplet (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Chiplet"
+      }
+    ]
+  },
+  {
+    "id": "rdma-roce",
+    "term": "RDMA / RoCE",
+    "definition": "Remote Direct Memory Access lets one server read/write another's memory bypassing the CPU/OS for very low latency. RoCE runs RDMA over Ethernet — key to AI fabrics on Ethernet.",
+    "vendor": "Industry",
+    "category": "Networking",
+    "tags": ["rdma", "roce", "low-latency"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "RDMA (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Remote_direct_memory_access"
+      },
+      {
+        "label": "RoCE (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/RDMA_over_Converged_Ethernet"
+      }
+    ]
+  }
+]

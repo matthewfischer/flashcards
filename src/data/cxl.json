@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cxl-overview",
+    "term": "CXL (Compute Express Link)",
+    "definition": "An open, cache-coherent interconnect built on the PCIe physical layer that lets CPUs, accelerators, and memory share data coherently — enabling memory expansion, pooling, and disaggregation.",
+    "vendor": "CXL Consortium",
+    "category": "Interconnect",
+    "tags": ["cxl", "coherency", "memory"],
+    "difficulty": "foundational",
+    "links": [
+      {
+        "label": "Compute Express Link (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compute_Express_Link"
+      }
+    ]
+  },
+  {
+    "id": "cxl-protocols",
+    "term": "CXL.io / CXL.cache / CXL.mem",
+    "definition": "CXL's three sub-protocols: CXL.io (PCIe-like discovery/IO), CXL.cache (device caches host memory coherently), CXL.mem (host accesses device-attached memory). Devices mix these by type.",
+    "vendor": "CXL Consortium",
+    "category": "Interconnect",
+    "tags": ["cxl", "protocol"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Compute Express Link (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compute_Express_Link"
+      }
+    ]
+  },
+  {
+    "id": "cxl-device-types",
+    "term": "CXL Type 1 / 2 / 3 devices",
+    "definition": "Type 1 = accelerators with caches (no local memory); Type 2 = accelerators with their own memory (GPUs, coherent); Type 3 = memory expanders/buffers. Type 3 drives the memory-expansion use case.",
+    "vendor": "CXL Consortium",
+    "category": "Interconnect",
+    "tags": ["cxl", "device-types"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Compute Express Link (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compute_Express_Link"
+      }
+    ]
+  },
+  {
+    "id": "cxl-1-1",
+    "term": "CXL 1.1",
+    "definition": "First widely deployed version (over PCIe 5.0). Enables direct-attached memory expansion to a single host — the foundation supported by Sapphire Rapids and Genoa.",
+    "vendor": "CXL Consortium",
+    "category": "Interconnect",
+    "tags": ["cxl", "1.1", "memory-expansion"],
+    "difficulty": "intermediate",
+    "links": [
+      {
+        "label": "Compute Express Link (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compute_Express_Link"
+      }
+    ]
+  },
+  {
+    "id": "cxl-2-0",
+    "term": "CXL 2.0",
+    "definition": "Adds single-level switching, memory pooling (multiple hosts share a pool of memory devices), and hot-plug — the first step toward disaggregated, shareable memory.",
+    "vendor": "CXL Consortium",
+    "category": "Interconnect",
+    "tags": ["cxl", "2.0", "pooling"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "Compute Express Link (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compute_Express_Link"
+      }
+    ]
+  },
+  {
+    "id": "cxl-3-x",
+    "term": "CXL 3.0 / 3.1",
+    "definition": "Runs on PCIe 6.0 (64 GT/s), adds multi-level switching, fabric topologies, and memory sharing (coherent access to the same memory by multiple hosts) — enabling true composable/disaggregated systems.",
+    "vendor": "CXL Consortium",
+    "category": "Interconnect",
+    "tags": ["cxl", "3.0", "fabric", "sharing"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "Compute Express Link (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compute_Express_Link"
+      }
+    ]
+  },
+  {
+    "id": "cxl-memory-pooling",
+    "term": "CXL memory pooling",
+    "definition": "Aggregating memory into a shared pool that multiple servers draw from on demand, reducing stranded/over-provisioned DRAM and improving utilization across a rack.",
+    "vendor": "CXL Consortium",
+    "category": "Interconnect",
+    "tags": ["cxl", "pooling", "efficiency"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "Compute Express Link (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compute_Express_Link"
+      }
+    ]
+  },
+  {
+    "id": "cxl-memory-tiering",
+    "term": "CXL memory tiering",
+    "definition": "Using CXL-attached memory as a slower-but-larger tier below local DRAM, with the OS/software moving hot data up and cold data down — a practical way to expand capacity affordably.",
+    "vendor": "CXL Consortium",
+    "category": "Memory",
+    "tags": ["cxl", "tiering", "capacity"],
+    "difficulty": "advanced",
+    "links": [
+      {
+        "label": "Compute Express Link (Wikipedia)",
+        "url": "https://en.wikipedia.org/wiki/Compute_Express_Link"
+      }
+    ]
+  }
+]
