@@ -37,7 +37,7 @@
   },
   "build": {
     "appId": "com.mattfischer.hwflashcards",
-    "productName": "H-W Flashcards",
+    "productName": "Server Flashcards",
     "files": [
       "dist/**/*",
       "electron/**/*"
