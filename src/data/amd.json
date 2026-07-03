@@ -2,6 +2,7 @@
   {
     "id": "amd-epyc-genoa",
     "term": "AMD EPYC Genoa (4th Gen)",
+    "released": "2022",
     "definition": "AMD's Zen 4 server CPU (up to 96 cores) with DDR5, PCIe 5.0, and CXL 1.1+ support — a big performance and core-count lead that grew AMD's server share.",
     "vendor": "AMD",
     "category": "CPU",
@@ -21,6 +22,7 @@
   {
     "id": "amd-epyc-bergamo",
     "term": "AMD EPYC Bergamo (Zen 4c)",
+    "released": "2023",
     "definition": "Cloud-native EPYC using compact Zen 4c cores (up to 128) for maximum density and efficiency in scale-out workloads — AMD's answer to high-core-count E-core CPUs.",
     "vendor": "AMD",
     "category": "CPU",
@@ -40,6 +42,7 @@
   {
     "id": "amd-epyc-siena",
     "term": "AMD EPYC Siena",
+    "released": "2023",
     "definition": "Lower-power, lower-cost EPYC line (SP6 socket) aimed at edge, telco, and space/power-constrained deployments rather than dense data centers.",
     "vendor": "AMD",
     "category": "CPU",
@@ -59,6 +62,7 @@
   {
     "id": "amd-epyc-turin",
     "term": "AMD EPYC Turin (5th Gen)",
+    "released": "2024",
     "definition": "AMD's Zen 5 / Zen 5c server CPU scaling to 128 (Zen 5) or up to 192 (Zen 5c) cores, with strong performance-per-socket and per-watt gains for AI head-nodes and general compute.",
     "vendor": "AMD",
     "category": "CPU",
@@ -78,6 +82,7 @@
   {
     "id": "amd-epyc-venice",
     "term": "AMD EPYC Venice (Zen 6)",
+    "released": "2026",
     "definition": "AMD's next-gen EPYC on Zen 6, expected on a new (2nm-class) process with higher core counts and a next platform (SP7) — an early leading-edge TSMC N2 server part.",
     "vendor": "AMD",
     "category": "CPU",
@@ -113,6 +118,7 @@
   {
     "id": "amd-instinct-mi300x",
     "term": "AMD Instinct MI300X",
+    "released": "2023",
     "definition": "AMD's flagship data-center GPU (CDNA 3) with 192 GB HBM3 — large memory makes it competitive for LLM inference. AMD's main challenger to NVIDIA H100/H200.",
     "vendor": "AMD",
     "category": "GPU",
@@ -132,6 +138,7 @@
   {
     "id": "amd-instinct-mi300a",
     "term": "AMD Instinct MI300A (APU)",
+    "released": "2023",
     "definition": "An APU combining CPU (Zen 4) and GPU (CDNA 3) with shared HBM in one package — used in the El Capitan exascale supercomputer.",
     "vendor": "AMD",
     "category": "GPU",
@@ -151,6 +158,7 @@
   {
     "id": "amd-instinct-mi325x",
     "term": "AMD Instinct MI325X",
+    "released": "2024",
     "definition": "Memory-upgraded MI300-series GPU with 256 GB HBM3e, targeting inference of large models where memory capacity and bandwidth dominate.",
     "vendor": "AMD",
     "category": "GPU",
@@ -170,6 +178,7 @@
   {
     "id": "amd-instinct-mi350",
     "term": "AMD Instinct MI350 (CDNA 4)",
+    "released": "2025",
     "definition": "AMD's CDNA 4 GPU generation (MI350X/MI355X) with HBM3e and new low-precision (FP4/FP6) formats, aimed at closing the gap with NVIDIA Blackwell on AI performance.",
     "vendor": "AMD",
     "category": "GPU",
@@ -190,6 +199,7 @@
   {
     "id": "amd-instinct-mi400",
     "term": "AMD Instinct MI400",
+    "released": "2026",
     "definition": "AMD's next GPU architecture (post-CDNA 4) designed for rack-scale AI, expected with HBM4 and much higher scale-up bandwidth — the compute engine for the Helios rack.",
     "vendor": "AMD",
     "category": "GPU",
@@ -210,6 +220,7 @@
   {
     "id": "amd-helios",
     "term": "AMD Helios (rack)",
+    "released": "2026",
     "definition": "AMD's rack-scale AI system combining EPYC CPUs, Instinct MI400 GPUs, and Pensando networking with an open (UALink/Ultra Ethernet) fabric — AMD's answer to NVIDIA NVL rack systems.",
     "vendor": "AMD",
     "category": "Rack-scale",

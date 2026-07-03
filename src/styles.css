@@ -145,6 +145,17 @@ body {
   opacity: 0.4;
   cursor: not-allowed;
 }
+.start-btn--alt {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  font-size: 0.95rem;
+  margin-top: 10px;
+}
+.start-btn--alt:hover:not(:disabled) {
+  background: var(--surface);
+  border-color: var(--accent-dim);
+}
 
 .footer-links {
   display: flex;
@@ -199,6 +210,12 @@ body {
 .chip-roadmap {
   background: #3a2a12;
   color: var(--hard);
+}
+.chip-year {
+  background: var(--surface);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  font-variant-numeric: tabular-nums;
 }
 
 .flashcard {
@@ -409,5 +426,103 @@ body {
   border: 1px solid var(--border);
   border-radius: 10px;
   margin-bottom: 8px;
+  font-size: 0.9rem;
+}
+
+/* ---------- Ordering / timeline quiz ---------- */
+.order-list {
+  list-style: none;
+  padding: 0;
+  margin: 6px 0 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.order-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.order-item--ok {
+  border-color: var(--good);
+}
+.order-item--bad {
+  border-color: var(--again);
+}
+.order-rank {
+  flex: 0 0 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+.order-term {
+  flex: 1;
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+.order-year {
+  color: var(--muted);
+  font-weight: 400;
+  font-variant-numeric: tabular-nums;
+}
+.order-moves {
+  display: flex;
+  gap: 6px;
+}
+.order-move {
+  width: 34px;
+  height: 34px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  font-size: 1rem;
+  cursor: pointer;
+}
+.order-move:hover:not(:disabled) {
+  border-color: var(--accent-dim);
+}
+.order-move:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+.order-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.order-verdict {
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.05rem;
+}
+.order-verdict.is-correct {
+  color: var(--good);
+}
+.order-verdict.is-wrong {
+  color: var(--hard);
+}
+.order-solution-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.order-solution-list {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
   font-size: 0.9rem;
 }

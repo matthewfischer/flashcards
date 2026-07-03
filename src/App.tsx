@@ -3,8 +3,10 @@ import type { Card, Rating } from './types'
 import { VENDORS, CATEGORIES, ALL_CARDS } from './data'
 import { useDeck, type DeckFilters } from './useDeck'
 import Flashcard from './components/Flashcard'
+import OrderingQuiz from './components/OrderingQuiz'
+import { buildOrderingRounds, canPlayOrdering, type OrderingRound } from './ordering'
 
-type Screen = 'setup' | 'session' | 'done' | 'manage'
+type Screen = 'setup' | 'session' | 'done' | 'manage' | 'order'
 
 const LENGTH_OPTIONS = [
   { label: 'Quick · 10', value: 10 },
@@ -54,6 +56,10 @@ export default function App() {
   const [pos, setPos] = useState(0)
   const [reviewedCount, setReviewedCount] = useState(0)
 
+  const [orderRounds, setOrderRounds] = useState<OrderingRound[]>([])
+  const [orderIndex, setOrderIndex] = useState(0)
+  const orderingAvailable = useMemo(() => canPlayOrdering(deck.activeCards), [deck.activeCards])
+
   const toggle = (list: string[], set: (v: string[]) => void, value: string) =>
     set(list.includes(value) ? list.filter((v) => v !== value) : [...list, value])
 
@@ -86,6 +92,14 @@ export default function App() {
     const card = queue[pos]
     deck.dismissCard(card.id)
     advance()
+  }
+
+  function startOrdering() {
+    const rounds = buildOrderingRounds(deck.activeCards)
+    if (rounds.length === 0) return
+    setOrderRounds(rounds)
+    setOrderIndex(0)
+    setScreen('order')
   }
 
   const dismissedCards = useMemo(
@@ -164,6 +178,12 @@ export default function App() {
             {previewCount === 0 ? 'No cards match' : `Start · ${previewCount} card${previewCount === 1 ? '' : 's'}`}
           </button>
 
+          {orderingAvailable && (
+            <button className="start-btn start-btn--alt" onClick={startOrdering}>
+              Timeline quiz · arrange oldest → newest
+            </button>
+          )}
+
           <div className="footer-links">
             <button className="link-btn" onClick={() => setScreen('manage')}>
               Manage dismissed ({deck.dismissed.size})
@@ -195,6 +215,20 @@ export default function App() {
           <button className="link-btn end-btn" onClick={() => setScreen('done')}>
             End session
           </button>
+        </main>
+      )}
+
+      {screen === 'order' && orderRounds[orderIndex] && (
+        <main className="session">
+          <OrderingQuiz
+            key={orderIndex}
+            round={orderRounds[orderIndex]}
+            roundNumber={orderIndex + 1}
+            roundTotal={orderRounds.length}
+            isLast={orderIndex === orderRounds.length - 1}
+            onNext={() => setOrderIndex((i) => i + 1)}
+            onExit={() => setScreen('setup')}
+          />
         </main>
       )}
 
