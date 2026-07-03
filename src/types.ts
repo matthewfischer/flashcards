@@ -32,6 +32,12 @@ export interface Card {
   difficulty?: Difficulty
   /** Optional: mark forward-looking items so the UI can flag them. */
   roadmap?: boolean
+  /**
+   * Optional release date, added only where a product has a meaningful launch
+   * date (chips, CPUs, GPUs, systems). Concepts/standards can omit it.
+   * Use a year ("2022") or year-month ("2022-03"); sorts lexicographically.
+   */
+  released?: string
 }
 
 /** The five Leitner boxes. Box 1 = review most often, Box 5 = mastered. */

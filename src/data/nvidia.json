@@ -2,6 +2,7 @@
   {
     "id": "nvidia-hopper-h100",
     "term": "NVIDIA H100 (Hopper)",
+    "released": "2022",
     "definition": "Data-center GPU on the Hopper architecture with the Transformer Engine (FP8) for LLM training/inference. Uses HBM3, NVLink, and became the workhorse of the generative-AI boom.",
     "vendor": "NVIDIA",
     "category": "GPU",
@@ -21,6 +22,7 @@
   {
     "id": "nvidia-h200",
     "term": "NVIDIA H200",
+    "released": "2024",
     "definition": "Hopper-generation GPU upgraded with 141 GB of faster HBM3e memory (vs H100's 80 GB), boosting inference throughput and larger-model capacity without changing the core architecture.",
     "vendor": "NVIDIA",
     "category": "GPU",
@@ -40,6 +42,7 @@
   {
     "id": "nvidia-grace",
     "term": "NVIDIA Grace CPU",
+    "released": "2023",
     "definition": "NVIDIA's Arm-based, 72-core data-center CPU with LPDDR5X memory, designed to pair tightly with GPUs over NVLink-C2C for AI and HPC — NVIDIA's first datacenter CPU.",
     "vendor": "NVIDIA",
     "category": "CPU",
@@ -55,6 +58,7 @@
   {
     "id": "nvidia-gh200",
     "term": "NVIDIA GH200 (Grace Hopper)",
+    "released": "2023",
     "definition": "A 'superchip' combining a Grace CPU and Hopper GPU on one module via NVLink-C2C, giving the GPU coherent, high-bandwidth access to large CPU memory for big-model workloads.",
     "vendor": "NVIDIA",
     "category": "GPU",
@@ -70,6 +74,7 @@
   {
     "id": "nvidia-blackwell-b200",
     "term": "NVIDIA Blackwell (B200 / B100)",
+    "released": "2024",
     "definition": "The architecture after Hopper: a dual-die GPU with second-gen Transformer Engine (FP4/FP6), HBM3e, and 5th-gen NVLink — a major step-up for trillion-parameter model training and inference.",
     "vendor": "NVIDIA",
     "category": "GPU",
@@ -89,6 +94,7 @@
   {
     "id": "nvidia-gb200",
     "term": "NVIDIA GB200 (Grace Blackwell)",
+    "released": "2024",
     "definition": "Superchip pairing one Grace CPU with two Blackwell GPUs. The building block of the GB200 NVL72 rack-scale system.",
     "vendor": "NVIDIA",
     "category": "GPU",
@@ -104,6 +110,7 @@
   {
     "id": "nvidia-gb200-nvl72",
     "term": "GB200 NVL72",
+    "released": "2024",
     "definition": "A liquid-cooled rack that links 72 Blackwell GPUs and 36 Grace CPUs over a single NVLink domain so they act as one giant GPU — NVIDIA's rack-scale unit for frontier AI.",
     "vendor": "NVIDIA",
     "category": "Rack-scale",
@@ -119,6 +126,7 @@
   {
     "id": "nvidia-blackwell-ultra-gb300",
     "term": "Blackwell Ultra (GB300)",
+    "released": "2025",
     "definition": "Mid-cycle Blackwell refresh with more HBM3e memory and higher inference performance, targeting large-scale reasoning/inference deployments; basis of the GB300 NVL72.",
     "vendor": "NVIDIA",
     "category": "GPU",
@@ -135,6 +143,7 @@
   {
     "id": "nvidia-vera",
     "term": "NVIDIA Vera CPU",
+    "released": "2026",
     "definition": "NVIDIA's next custom Arm-based CPU (successor to Grace), built on custom 'Olympus' cores, designed to pair with the Rubin GPU in the Vera Rubin platform.",
     "vendor": "NVIDIA",
     "category": "CPU",
@@ -145,6 +154,7 @@
   {
     "id": "nvidia-rubin",
     "term": "NVIDIA Rubin GPU",
+    "released": "2026",
     "definition": "The GPU architecture after Blackwell (named for astronomer Vera Rubin). Expected to use HBM4 and next-gen NVLink; pairs with the Vera CPU in Vera Rubin systems.",
     "vendor": "NVIDIA",
     "category": "GPU",
@@ -155,6 +165,7 @@
   {
     "id": "nvidia-vera-rubin",
     "term": "Vera Rubin (VR200 NVL144)",
+    "released": "2026",
     "definition": "NVIDIA's next rack-scale platform combining Vera CPUs with Rubin GPUs, following the Grace-Blackwell generation on NVIDIA's roughly annual cadence.",
     "vendor": "NVIDIA",
     "category": "Rack-scale",

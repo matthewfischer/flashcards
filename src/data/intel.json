@@ -2,6 +2,7 @@
   {
     "id": "intel-xeon-6",
     "term": "Intel Xeon 6",
+    "released": "2024",
     "definition": "Intel's rebranded server CPU line that splits into two families: P-core (performance) and E-core (efficiency/density), letting customers pick per workload while sharing a platform.",
     "vendor": "Intel",
     "category": "CPU",
@@ -32,6 +33,7 @@
   {
     "id": "intel-sapphire-rapids",
     "term": "Sapphire Rapids (4th Gen Xeon)",
+    "released": "2023",
     "definition": "Intel's 4th Gen Xeon Scalable — first with built-in accelerators (AMX for AI, DSA, QAT), DDR5, PCIe 5.0, and CXL 1.1 support. Also offered a rare HBM variant (Xeon Max).",
     "vendor": "Intel",
     "category": "CPU",
@@ -47,6 +49,7 @@
   {
     "id": "intel-emerald-rapids",
     "term": "Emerald Rapids (5th Gen Xeon)",
+    "released": "2023",
     "definition": "Refinement of Sapphire Rapids: more cores, larger cache, higher efficiency on the same platform — an incremental performance-per-watt uplift.",
     "vendor": "Intel",
     "category": "CPU",
@@ -62,6 +65,7 @@
   {
     "id": "intel-granite-rapids",
     "term": "Granite Rapids (Xeon 6 P-core)",
+    "released": "2024",
     "definition": "Intel's high-performance Xeon 6 P-core CPU on Intel 3 process, with high core counts and support for faster memory including MRDIMM — aimed at demanding compute and AI head-node roles.",
     "vendor": "Intel",
     "category": "CPU",
@@ -77,6 +81,7 @@
   {
     "id": "intel-sierra-forest",
     "term": "Sierra Forest (Xeon 6 E-core)",
+    "released": "2024",
     "definition": "Intel's efficiency-core Xeon 6 with very high core counts (up to 288) for cloud-native, scale-out, high-density workloads where throughput-per-watt and rack consolidation matter.",
     "vendor": "Intel",
     "category": "CPU",
@@ -92,6 +97,7 @@
   {
     "id": "intel-clearwater-forest",
     "term": "Clearwater Forest",
+    "released": "2026",
     "definition": "Intel's next E-core Xeon, notable as an early high-volume server product on the Intel 18A process with backside power (PowerVia) and RibbonFET — a key manufacturing milestone.",
     "vendor": "Intel",
     "category": "CPU",
@@ -108,6 +114,7 @@
   {
     "id": "intel-diamond-rapids",
     "term": "Diamond Rapids",
+    "released": "2026",
     "definition": "Intel's next-generation P-core Xeon following Granite Rapids, expected to push higher core counts, new instructions (APX/AVX10), and a new platform.",
     "vendor": "Intel",
     "category": "CPU",
@@ -139,6 +146,7 @@
   {
     "id": "intel-gaudi",
     "term": "Intel Gaudi 3",
+    "released": "2024",
     "definition": "Intel's dedicated AI training/inference accelerator (from Habana Labs), positioned as a lower-cost alternative to NVIDIA GPUs, using standard Ethernet for scale-out.",
     "vendor": "Intel",
     "category": "Accelerators",

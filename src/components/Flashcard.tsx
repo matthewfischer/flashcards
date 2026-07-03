@@ -34,6 +34,7 @@ export default function Flashcard({ card, index, total, onRate, onDismiss }: Fla
         <span className="chips">
           <span className="chip chip-vendor">{card.vendor}</span>
           <span className="chip chip-cat">{card.category}</span>
+          {card.released && <span className="chip chip-year">{card.released}</span>}
           {card.roadmap && <span className="chip chip-roadmap">roadmap</span>}
         </span>
       </div>
