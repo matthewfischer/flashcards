@@ -277,6 +277,9 @@ export default function App() {
           </button>
         </main>
       )}
+      <footer className="build-info">
+        Updated: {new Date(__BUILD_DATE__).toLocaleString()} [{__GIT_HASH__}]
+      </footer>
     </div>
   )
 }
