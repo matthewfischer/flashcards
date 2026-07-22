@@ -172,5 +172,176 @@
     "category": "Servers",
     "tags": ["fault-tolerant", "mission-critical"],
     "difficulty": "advanced"
+  },
+  {
+    "id": "hpe-dl145",
+    "term": "HPE ProLiant Compute DL145",
+    "definition": "Compact, edge-focused 2U single-socket rack server aimed at distributed locations that need strong core performance, GPU options, and remote lifecycle management.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "edge", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-dl320",
+    "term": "HPE ProLiant Compute DL320",
+    "definition": "Space-efficient 1U single-socket rack server for general virtualization, web, and branch workloads where rack density and power efficiency are priorities.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "1u", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-dl325",
+    "term": "HPE ProLiant Compute DL325",
+    "definition": "Single-socket AMD-based 1U platform positioned for virtualization and scale-out workloads that benefit from high core counts and strong performance per watt.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "amd", "1u", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-dl340",
+    "term": "HPE ProLiant Compute DL340",
+    "definition": "Balanced 2U rack server class for mixed enterprise workloads that need more expansion and thermal headroom than compact 1U designs.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "2u", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-dl345",
+    "term": "HPE ProLiant Compute DL345",
+    "definition": "Single-socket AMD-based 2U server for storage-rich and expansion-heavy deployments, often used for virtual infrastructure and data-intensive services.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "amd", "2u", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-dl360",
+    "term": "HPE ProLiant Compute DL360",
+    "definition": "Mainstream 1U dual-socket enterprise rack server optimized for high-density virtualization, databases, and business applications in constrained rack space.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "1u", "2p", "model", "hpe-model-lineup"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "hpe-dl365",
+    "term": "HPE ProLiant Compute DL365",
+    "definition": "Dual-socket AMD-focused 1U class server for dense virtualization and cloud-scale workloads needing strong core density in minimal rack units.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "amd", "1u", "2p", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-dl380",
+    "term": "HPE ProLiant Compute DL380",
+    "definition": "Flagship general-purpose 2U dual-socket rack server known for broad configurability, expansion options, and fit across virtualization, database, and infrastructure roles.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "2u", "2p", "model", "hpe-model-lineup"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "hpe-dl380a",
+    "term": "HPE ProLiant Compute DL380a",
+    "definition": "Accelerator-optimized variant of the DL380 platform designed for AI and GPU-heavy workloads, adding power, cooling, and layout choices tuned for accelerators.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "ai", "gpu", "accelerated", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-dl385",
+    "term": "HPE ProLiant Compute DL385",
+    "definition": "Dual-socket AMD-based 2U enterprise server used for virtualization and data platform workloads that value high memory bandwidth and scalable I/O.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "amd", "2u", "2p", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-dl560",
+    "term": "HPE ProLiant Compute DL560",
+    "definition": "Dense 2U four-socket class x86 server for scale-up consolidation where many cores, large memory capacity, and high availability are needed in limited rack space.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "scale-up", "4p", "model", "hpe-model-lineup"],
+    "difficulty": "advanced"
+  },
+  {
+    "id": "hpe-dl580",
+    "term": "HPE ProLiant Compute DL580",
+    "definition": "High-end 4U four-socket class enterprise platform for large in-memory databases and mission-critical virtualization requiring major RAM and I/O expansion.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "dl", "scale-up", "4p", "model", "hpe-model-lineup"],
+    "difficulty": "advanced"
+  },
+  {
+    "id": "hpe-ml30",
+    "term": "HPE ProLiant Compute ML30",
+    "definition": "Entry tower server for SMB and branch offices, typically used for file/print, collaboration, and light virtualization with straightforward onsite operation.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "ml", "tower", "smb", "model", "hpe-model-lineup"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "hpe-ml110",
+    "term": "HPE ProLiant Compute ML110",
+    "definition": "Single-socket tower platform offering more headroom than entry models for growing SMB workloads, including business apps and modest virtualization.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "ml", "tower", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-ml350",
+    "term": "HPE ProLiant Compute ML350",
+    "definition": "Mainstream dual-socket tower server for branch and midmarket environments needing enterprise features, large memory/storage options, and expansion flexibility.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["proliant", "ml", "tower", "2p", "model", "hpe-model-lineup"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "hpe-synergy-480",
+    "term": "HPE Synergy 480 Compute Module",
+    "definition": "Two-socket composable compute node in the Synergy platform, used when teams want template-driven provisioning and pooled infrastructure for private cloud.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["synergy", "composable", "blade", "model", "hpe-model-lineup"],
+    "difficulty": "intermediate"
+  },
+  {
+    "id": "hpe-synergy-660",
+    "term": "HPE Synergy 660 Compute Module",
+    "definition": "Four-socket Synergy compute module for memory-intensive and scale-up workloads that still benefit from composable infrastructure operations.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["synergy", "composable", "scale-up", "model", "hpe-model-lineup"],
+    "difficulty": "advanced"
+  },
+  {
+    "id": "hpe-apollo-2000",
+    "term": "HPE Apollo 2000 System",
+    "definition": "High-density shared-infrastructure chassis platform for scale-out compute and HPC-style workloads, designed to maximize node density and operational efficiency.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["apollo", "hpc", "density", "model", "hpe-model-lineup"],
+    "difficulty": "advanced"
+  },
+  {
+    "id": "hpe-apollo-4000",
+    "term": "HPE Apollo 4000 System",
+    "definition": "Data-centric high-density server family tuned for storage-heavy and big-data use cases, balancing compute with very high local drive capacity.",
+    "vendor": "HPE",
+    "category": "Server Models",
+    "tags": ["apollo", "storage", "big-data", "model", "hpe-model-lineup"],
+    "difficulty": "advanced"
   }
 ]
