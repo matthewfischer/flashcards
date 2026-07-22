@@ -203,7 +203,7 @@
   {
     "id": "hpe-dl340",
     "term": "HPE ProLiant Compute DL340",
-    "definition": "2U 2S Intel. Balanced rack server class for mixed enterprise workloads that need more expansion and thermal headroom than compact 1U designs.",
+    "definition": "2U 1S Intel. Balanced rack server class for mixed enterprise workloads that need more expansion and thermal headroom than compact 1U designs.",
     "vendor": "HPE",
     "category": "Server Models",
     "tags": ["proliant", "dl", "2u", "model", "hpe-model-lineup"],
