@@ -2,7 +2,7 @@
   {
     "id": "dlc",
     "term": "Direct Liquid Cooling (DLC)",
-    "definition": "Cooling that pipes liquid to cold plates on hot components (CPU/GPU) instead of relying on air. Increasingly mandatory as accelerator TDPs exceed what air can handle. HPE ships fanless 100% DLC for top systems.",
+    "definition": "Also called direct-to-chip: cooling that pipes liquid to cold plates on hot components (CPU/GPU) instead of relying on air. Covers roughly 100-175 kW/rack — the band above rear-door heat exchangers and below immersion. HPE ships fanless 100% DLC for top systems.",
     "vendor": "Industry",
     "category": "Cooling & Power",
     "tags": ["liquid-cooling", "dlc"],
@@ -17,7 +17,7 @@
   {
     "id": "immersion-cooling",
     "term": "Immersion cooling",
-    "definition": "Submerging servers in a dielectric fluid (single- or two-phase) to remove heat. Enables extreme density but requires new mechanical/facility design.",
+    "definition": "Submerging servers in a dielectric fluid (single- or two-phase) to remove heat. Used above roughly 175 kW/rack, where even direct-to-chip liquid cooling runs out of headroom. Enables extreme density but requires new mechanical/facility design.",
     "vendor": "Industry",
     "category": "Cooling & Power",
     "tags": ["immersion", "density"],
@@ -47,7 +47,7 @@
   {
     "id": "rear-door-hx",
     "term": "Rear-door heat exchanger",
-    "definition": "A liquid-cooled radiator mounted on the rack's back door that cools exhaust air, letting existing air-cooled racks handle higher density without full DLC.",
+    "definition": "A liquid-cooled radiator mounted on the rack's back door that cools exhaust air, letting existing air-cooled racks handle higher density without full DLC. Stretches air-cooled racks to roughly 100 kW before direct-to-chip liquid becomes necessary.",
     "vendor": "Industry",
     "category": "Cooling & Power",
     "tags": ["cooling", "retrofit"],
@@ -97,6 +97,33 @@
         "url": "https://en.wikipedia.org/wiki/Power_usage_effectiveness"
       }
     ]
+  },
+  {
+    "id": "cooling-method-thresholds",
+    "term": "Cooling method thresholds (kW/rack)",
+    "definition": "Quick reference for which cooling method a rack needs: air works to ~20 kW, rear-door heat exchangers stretch to ~100 kW, direct-to-chip liquid covers ~100-175 kW, and above that you need immersion.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["power", "density", "liquid-cooling", "air-cooling"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "air-cooling-limit",
+    "term": "Air cooling ceiling (~20 kW/rack)",
+    "definition": "Fans blowing air through a rack work reliably up to roughly 20 kW/rack. Past that, the airflow volume needed to carry away the heat becomes impractical (noise, fan power, duct/floor space), forcing a move to rear-door heat exchangers or direct liquid cooling.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["air-cooling", "power", "density"],
+    "difficulty": "foundational"
+  },
+  {
+    "id": "liquid-vs-air-heat-capacity",
+    "term": "Why liquid cooling beats air",
+    "definition": "Liquid carries roughly 1000x the heat per unit volume that air does, and in direct-to-chip cooling it picks up heat right at the die instead of off a heatsink's surface. That's the physics behind the whole air -> rear-door -> direct-liquid -> immersion progression as rack power climbs.",
+    "vendor": "Industry",
+    "category": "Cooling & Power",
+    "tags": ["physics", "liquid-cooling", "thermal"],
+    "difficulty": "intermediate"
   },
   {
     "id": "48v-power",
