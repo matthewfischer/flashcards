@@ -30,21 +30,6 @@
     ]
   },
   {
-    "id": "fmt-fp16",
-    "term": "FP16 (half precision)",
-    "definition": "16-bit float (1 / 5 / 10). Halves memory and doubles throughput vs FP32, but its small 5-bit exponent range risks overflow/underflow — typically used with 'loss scaling' during training.",
-    "vendor": "Industry",
-    "category": "Numeric Formats",
-    "tags": ["precision", "training"],
-    "difficulty": "intermediate",
-    "links": [
-      {
-        "label": "Half precision (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/Half-precision_floating-point_format"
-      }
-    ]
-  },
-  {
     "id": "fmt-bf16",
     "term": "BF16 (bfloat16)",
     "definition": "16-bit float (1 / 8 / 7) that keeps FP32's full 8-bit exponent range but fewer mantissa bits. Same dynamic range as FP32 makes it far easier to train with than FP16 — now the default for much AI training.",
@@ -60,43 +45,13 @@
     ]
   },
   {
-    "id": "fmt-fp8",
-    "term": "FP8",
-    "definition": "8-bit float in two variants — E4M3 (more precision) and E5M2 (more range). Popularized by NVIDIA's Hopper Transformer Engine; roughly doubles throughput and halves memory vs FP16 for training and inference.",
+    "id": "fmt-low-precision",
+    "term": "FP16 → FP8 → FP4",
+    "definition": "A practical AI precision ladder: FP16 is the safer, higher-accuracy baseline; FP8 cuts memory and increases throughput; FP4 cuts both further for inference but needs careful scaling and can reduce accuracy. Lower bits mean more speed and less memory, not automatically better results.",
     "vendor": "Industry",
     "category": "Numeric Formats",
-    "tags": ["precision", "fp8", "transformer-engine"],
+    "tags": ["precision", "fp16", "fp8", "fp4", "training", "inference"],
     "difficulty": "intermediate",
-    "links": [
-      {
-        "label": "Minifloat (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/Minifloat"
-      }
-    ]
-  },
-  {
-    "id": "fmt-fp6",
-    "term": "FP6",
-    "definition": "6-bit float, an intermediate step between FP8 and FP4. Supported on Blackwell and AMD CDNA 4, it trades a little accuracy for more inference throughput and smaller memory footprint.",
-    "vendor": "Industry",
-    "category": "Numeric Formats",
-    "tags": ["precision", "inference"],
-    "difficulty": "intermediate",
-    "links": [
-      {
-        "label": "Minifloat (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/Minifloat"
-      }
-    ]
-  },
-  {
-    "id": "fmt-fp4",
-    "term": "FP4",
-    "definition": "4-bit float (e.g., E2M1) — the lowest-precision format in current AI hardware. Blackwell and AMD MI350 use it to maximize inference tokens/sec; needs careful per-block scaling (MX formats) to hold accuracy.",
-    "vendor": "Industry",
-    "category": "Numeric Formats",
-    "tags": ["precision", "fp4", "inference"],
-    "difficulty": "advanced",
     "links": [
       {
         "label": "Minifloat (Wikipedia)",

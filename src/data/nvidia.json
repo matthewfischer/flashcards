@@ -1,9 +1,9 @@
 [
   {
     "id": "nvidia-hopper-h100",
-    "term": "NVIDIA H100 (Hopper)",
+    "term": "NVIDIA Hopper (H100 / H200)",
     "released": "2022",
-    "definition": "Data-center GPU on the Hopper architecture with the Transformer Engine (FP8) for LLM training/inference. Uses HBM3, NVLink, and became the workhorse of the generative-AI boom.",
+    "definition": "NVIDIA's prior-generation data-center GPU architecture. H100 and the HBM3e-upgraded H200 are Hopper products; know it as the generation before Blackwell, with FP8 Transformer Engine and NVLink.",
     "vendor": "NVIDIA",
     "category": "GPU",
     "tags": ["hopper", "training", "hbm3"],
@@ -16,26 +16,6 @@
       {
         "label": "Hopper architecture",
         "url": "https://www.nvidia.com/en-us/data-center/technologies/hopper-architecture/"
-      }
-    ]
-  },
-  {
-    "id": "nvidia-h200",
-    "term": "NVIDIA H200",
-    "released": "2024",
-    "definition": "Hopper-generation GPU upgraded with 141 GB of faster HBM3e memory (vs H100's 80 GB), boosting inference throughput and larger-model capacity without changing the core architecture.",
-    "vendor": "NVIDIA",
-    "category": "GPU",
-    "tags": ["hopper", "hbm3e", "inference"],
-    "difficulty": "foundational",
-    "links": [
-      {
-        "label": "NVIDIA H200",
-        "url": "https://www.nvidia.com/en-us/data-center/h200/"
-      },
-      {
-        "label": "Hopper architecture (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/Hopper_(microarchitecture)"
       }
     ]
   },
@@ -56,26 +36,10 @@
     ]
   },
   {
-    "id": "nvidia-gh200",
-    "term": "NVIDIA GH200 (Grace Hopper)",
-    "released": "2023",
-    "definition": "A 'superchip' combining a Grace CPU and Hopper GPU on one module via NVLink-C2C, giving the GPU coherent, high-bandwidth access to large CPU memory for big-model workloads.",
-    "vendor": "NVIDIA",
-    "category": "GPU",
-    "tags": ["superchip", "grace", "hopper"],
-    "difficulty": "intermediate",
-    "links": [
-      {
-        "label": "NVIDIA Grace Hopper",
-        "url": "https://www.nvidia.com/en-us/data-center/grace-hopper-superchip/"
-      }
-    ]
-  },
-  {
     "id": "nvidia-blackwell-b200",
-    "term": "NVIDIA Blackwell (B200 / B100)",
+    "term": "NVIDIA Blackwell (B100 / B200 / GB200)",
     "released": "2024",
-    "definition": "The architecture after Hopper: a dual-die GPU with second-gen Transformer Engine (FP4/FP6), HBM3e, and 5th-gen NVLink — a major step-up for trillion-parameter model training and inference.",
+    "definition": "NVIDIA's current-generation data-center GPU architecture, after Hopper and before Rubin. B100/B200 GPUs and GB200 systems use Blackwell, with HBM3e, fifth-generation NVLink, and FP4/FP6-focused inference acceleration.",
     "vendor": "NVIDIA",
     "category": "GPU",
     "tags": ["blackwell", "fp4", "hbm3e"],
@@ -92,22 +56,6 @@
     ]
   },
   {
-    "id": "nvidia-gb200",
-    "term": "NVIDIA GB200 (Grace Blackwell)",
-    "released": "2024",
-    "definition": "Superchip pairing one Grace CPU with two Blackwell GPUs. The building block of the GB200 NVL72 rack-scale system.",
-    "vendor": "NVIDIA",
-    "category": "GPU",
-    "tags": ["superchip", "grace", "blackwell"],
-    "difficulty": "intermediate",
-    "links": [
-      {
-        "label": "NVIDIA Blackwell architecture",
-        "url": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/"
-      }
-    ]
-  },
-  {
     "id": "nvidia-gb200-nvl72",
     "term": "GB200 NVL72",
     "released": "2024",
@@ -120,23 +68,6 @@
       {
         "label": "NVIDIA GB200 NVL72",
         "url": "https://www.nvidia.com/en-us/data-center/gb200-nvl72/"
-      }
-    ]
-  },
-  {
-    "id": "nvidia-blackwell-ultra-gb300",
-    "term": "Blackwell Ultra (GB300)",
-    "released": "2025",
-    "definition": "Mid-cycle Blackwell refresh with more HBM3e memory and higher inference performance, targeting large-scale reasoning/inference deployments; basis of the GB300 NVL72.",
-    "vendor": "NVIDIA",
-    "category": "GPU",
-    "tags": ["blackwell", "gb300", "inference"],
-    "difficulty": "intermediate",
-    "roadmap": true,
-    "links": [
-      {
-        "label": "NVIDIA Blackwell architecture",
-        "url": "https://www.nvidia.com/en-us/data-center/technologies/blackwell-architecture/"
       }
     ]
   },

@@ -72,4 +72,28 @@ describe('card data integrity', () => {
       expect(card.definition.length, `definition too long on ${card.id}`).toBeLessThan(400)
     }
   })
+
+  it('keeps GPU study focused on architecture generations', () => {
+    const gpuTerms = ALL_CARDS.filter((card) => card.category === 'GPU').map((card) => card.term)
+
+    expect(gpuTerms).toEqual([
+      'AMD Instinct MI300 (CDNA 3)',
+      'AMD Instinct MI350 (CDNA 4)',
+      'AMD Instinct MI400',
+      'NVIDIA Hopper (H100 / H200)',
+      'NVIDIA Blackwell (B100 / B200 / GB200)',
+      'NVIDIA Rubin GPU',
+    ])
+    expect(gpuTerms).not.toEqual(expect.arrayContaining(['NVIDIA H200', 'NVIDIA GB200 (Grace Blackwell)']))
+    expect(gpuTerms).not.toEqual(expect.arrayContaining(['AMD Instinct MI325X', 'AMD Instinct MI300A (APU)']))
+  })
+
+  it('uses one card for the FP16 to FP4 precision tradeoff', () => {
+    const precisionTerms = ALL_CARDS.filter((card) => card.category === 'Numeric Formats').map(
+      (card) => card.term,
+    )
+
+    expect(precisionTerms).toContain('FP16 → FP8 → FP4')
+    expect(precisionTerms).not.toEqual(expect.arrayContaining(['FP16 (half precision)', 'FP8', 'FP4']))
+  })
 })

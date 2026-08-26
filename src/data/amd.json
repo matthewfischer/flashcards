@@ -117,9 +117,9 @@
   },
   {
     "id": "amd-instinct-mi300x",
-    "term": "AMD Instinct MI300X",
+    "term": "AMD Instinct MI300 (CDNA 3)",
     "released": "2023",
-    "definition": "AMD's flagship data-center GPU (CDNA 3) with 192 GB HBM3 — large memory makes it competitive for LLM inference. AMD's main challenger to NVIDIA H100/H200.",
+    "definition": "AMD's prior-generation data-center GPU family. MI300X, MI300A, and memory-upgraded MI325X are CDNA 3 products; know MI300 as the generation before MI350/CDNA 4.",
     "vendor": "AMD",
     "category": "GPU",
     "tags": ["instinct", "cdna3", "hbm3"],
@@ -136,50 +136,10 @@
     ]
   },
   {
-    "id": "amd-instinct-mi300a",
-    "term": "AMD Instinct MI300A (APU)",
-    "released": "2023",
-    "definition": "An APU combining CPU (Zen 4) and GPU (CDNA 3) with shared HBM in one package — used in the El Capitan exascale supercomputer.",
-    "vendor": "AMD",
-    "category": "GPU",
-    "tags": ["apu", "cdna3", "hpc"],
-    "difficulty": "advanced",
-    "links": [
-      {
-        "label": "AMD Instinct",
-        "url": "https://www.amd.com/en/products/accelerators/instinct.html"
-      },
-      {
-        "label": "AMD Instinct (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/AMD_Instinct"
-      }
-    ]
-  },
-  {
-    "id": "amd-instinct-mi325x",
-    "term": "AMD Instinct MI325X",
-    "released": "2024",
-    "definition": "Memory-upgraded MI300-series GPU with 256 GB HBM3e, targeting inference of large models where memory capacity and bandwidth dominate.",
-    "vendor": "AMD",
-    "category": "GPU",
-    "tags": ["instinct", "hbm3e", "inference"],
-    "difficulty": "intermediate",
-    "links": [
-      {
-        "label": "AMD Instinct",
-        "url": "https://www.amd.com/en/products/accelerators/instinct.html"
-      },
-      {
-        "label": "AMD Instinct (Wikipedia)",
-        "url": "https://en.wikipedia.org/wiki/AMD_Instinct"
-      }
-    ]
-  },
-  {
     "id": "amd-instinct-mi350",
     "term": "AMD Instinct MI350 (CDNA 4)",
     "released": "2025",
-    "definition": "AMD's CDNA 4 GPU generation (MI350X/MI355X) with HBM3e and new low-precision (FP4/FP6) formats, aimed at closing the gap with NVIDIA Blackwell on AI performance.",
+    "definition": "AMD's current-generation data-center GPU family, after MI300/CDNA 3 and before MI400. MI350X/MI355X use CDNA 4, HBM3e, and low-precision FP4/FP6 formats for AI inference.",
     "vendor": "AMD",
     "category": "GPU",
     "tags": ["instinct", "cdna4", "roadmap"],
