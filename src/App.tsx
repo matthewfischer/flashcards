@@ -4,6 +4,7 @@ import { VENDORS, CATEGORIES, ALL_CARDS } from './data'
 import { useDeck, type DeckFilters } from './useDeck'
 import Flashcard from './components/Flashcard'
 import OrderingQuiz from './components/OrderingQuiz'
+import PerformanceRanking from './components/PerformanceRanking'
 import { buildOrderingRounds, canPlayOrdering, type OrderingRound } from './ordering'
 
 type Screen = 'setup' | 'session' | 'done' | 'manage' | 'order'
@@ -136,6 +137,8 @@ export default function App() {
               <div className="stat-label">dismissed</div>
             </div>
           </div>
+
+          <PerformanceRanking />
 
           <MultiSelect
             title="Vendor"
